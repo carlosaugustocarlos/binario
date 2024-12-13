@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Binário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conversor Binário</h1>
+        <div class="inline">
+            <p>Converter para:</p>
+            <select name="op" id="roleSelect">
+                <option value="2">Binário</option>
+                <option value="8">Octal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+        </div>
+
+        <form id="form">
+            <label for="n">Decimal</label>
+            <input type="number" name="n" id="n">
+            <div class="line">
+                <button id="converterBtn">Converter</button>
+            </div>
+        </form>
+        <div class="resultado">
+            <h2 id="resultTitle"></h2>
+            <p id="result"></p>
+            <h2>Representação Gráfica</h2>
+            <span><b>Nota:</b> Os valores são retirados de cima para baixo</span>
+            <div class="grafico" id="grafico"></div>
+        </div>
+        <footer>Carlos Augusto</footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
